@@ -1,10 +1,12 @@
 import { Fragment } from "react";
-import { FooterMobile } from "@/components/Footer/Mobile/Footer";
-import { Footer } from "@/components/Footer/Desktop/Footer";
+import { Home } from "@/Pages/Home/Index";
 
 const App = () => {
-  const isMobile = window.innerWidth <= 1024;
-  return <Fragment>{isMobile ? <FooterMobile /> : <Footer />}</Fragment>;
+  return (
+    <Fragment>
+      <Home />
+    </Fragment>
+  );
 };
 
 export default App;

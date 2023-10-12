@@ -3,7 +3,7 @@ import facebook from "@/assets/icon-facebook.svg";
 import twitter from "@/assets/icon-twitter.svg";
 import instagram from "@/assets/icon-instagram.svg";
 
-export const Footer = () => {
+export const FooterDesktop = () => {
   return (
     <section className="bg-septenary flex flex-col px-40 pb-12">
       <div className="bg-primary w-24 h-1 mb-16" />
