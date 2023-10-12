@@ -1,17 +1,21 @@
-import React from "react";
+interface ButtonSeeProductProps {
+  Background?: string;
+  Color?: string;
+  Border?: boolean;
+}
 
-type ButtonSeeProductProps = {
-  Class: string;
-};
-
-const ButtonSeeProduct: React.FC<ButtonSeeProductProps> = ({ Class }) => {
+export const ButtonSeeProduct: React.FC<ButtonSeeProductProps> = ({
+  Background = "bg-primary",
+  Color = "text-senary",
+  Border = false,
+}) => {
   return (
     <div
-      className={`w-40 h-12 text-senary font-bold bg-primary flex justify-center items-center ${Class}`}
+      className={`w-40 h-12 font-bold flex justify-center items-center mt-3 ${
+        Border ? "border border-septenary" : ""
+      } ${Background} ${Color}`}
     >
       SEE PRODUCT
     </div>
   );
 };
-
-export default ButtonSeeProduct;
