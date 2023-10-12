@@ -1,6 +1,6 @@
 export const BringingDesktop = () => {
   return (
-    <section className="flex px-40 h-[45rem] mb-52 items-center">
+    <section className="flex gap-8 px-40 h-[45rem] mb-52 items-center">
       <div className="w-1/2 flex flex-col gap-8 pr-32">
         <div className="text-4xl font-bold">
           BRINGING YOU THE <br /> <span className="text-primary">BEST </span>
