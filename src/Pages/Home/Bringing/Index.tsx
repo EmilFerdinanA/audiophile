@@ -3,7 +3,7 @@ import { BringingMobile } from "@/Pages/Home/Bringing/Mobile/BringingMobile";
 import { BringingDesktop } from "@/Pages/Home/Bringing/Desktop/BringingDesktop";
 
 export const Bringing = () => {
-  const isMobile = window.innerWidth <= 1024;
+  const isMobile = window.innerWidth <= 1280;
   return (
     <Fragment>{isMobile ? <BringingMobile /> : <BringingDesktop />}</Fragment>
   );
