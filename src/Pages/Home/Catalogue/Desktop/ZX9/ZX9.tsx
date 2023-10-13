@@ -3,7 +3,7 @@ import ZX9Image from "@/assets/image-speaker-zx9-desktop.png";
 
 export const ZX9 = () => {
   return (
-    <section className="bg-primary bg-[url('@/assets/pattern-circles.svg')] bg-[top_left_-13rem] 2xl:bg-[top_left_-5.5rem] bg-no-repeat flex gap-8 rounded-lg text-senary pt-36 h-[625px]">
+    <section className="bg-primary bg-[url('@/assets/pattern-circles.svg')] bg-[top_left_-13rem] 2xl:bg-[top_left_-5.5rem] bg-no-repeat flex gap-8 rounded-lg text-senary pt-36 h-[39.063rem]">
       <div className="w-1/2 flex justify-center items-end">
         <img className="w-[80%] 2xl:w-3/5" src={ZX9Image} alt="zx9" />
       </div>
