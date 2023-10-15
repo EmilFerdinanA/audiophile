@@ -1,5 +1,6 @@
 import Audiophile from "@/assets/audiophile.svg";
 import Cart from "@/assets/icon-cart.svg";
+import { Link } from "react-router-dom";
 
 export const NavbarDesktop = () => {
   return (
@@ -10,7 +11,9 @@ export const NavbarDesktop = () => {
         </div>
         <ul className="text-senary font-bold flex items-center gap-9">
           <li className="cursor-pointer hover:text-primary">HOME</li>
-          <li className="cursor-pointer hover:text-primary">HEADPHONES</li>
+          <Link to="/category" className="cursor-pointer hover:text-primary">
+            HEADPHONES
+          </Link>
           <li className="cursor-pointer hover:text-primary">SPEAKERS</li>
           <li className="cursor-pointer hover:text-primary">EARPHONES</li>
         </ul>
