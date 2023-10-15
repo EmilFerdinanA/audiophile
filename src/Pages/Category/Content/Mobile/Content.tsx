@@ -28,12 +28,6 @@ export const ContentMobile = () => {
               src={isMobile ? e?.image.mobile : e?.image.tablet}
             />
           </div>
-          <div className={`bg-tertiary w-full rounded-lg`}>
-            <img
-              className="object-cover object-center w-full h-full"
-              src={require("src/assets/category-headphones/mobile/image-xx99-mark-two.jpg")}
-            />
-          </div>
 
           {index === 0 && (
             <span className="text-primary tracking-[10px]">NEW PRODUCT</span>
