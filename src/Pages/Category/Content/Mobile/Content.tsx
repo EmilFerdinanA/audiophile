@@ -30,7 +30,8 @@ export const ContentMobile = () => {
 
   return (
     <section className="mt-16 mb-32 flex flex-col gap-32 px-6 sm:px-10">
-      {content?.map((e: Headphone, index: number) => (
+      Emil
+      {/* {content?.map((e: Headphone, index: number) => (
         <div
           className="flex flex-col gap-6 justify-center items-center"
           key={e.id}
@@ -51,7 +52,7 @@ export const ContentMobile = () => {
           </p>
           <ButtonSeeProduct />
         </div>
-      ))}
+      ))} */}
     </section>
   );
 };
