@@ -25,7 +25,7 @@ export const ContentMobile = () => {
           <div className={`bg-tertiary w-full rounded-lg`}>
             <img
               className="object-cover object-center w-full h-full"
-              src={isMobile ? e?.image.mobile : e?.image.tablet}
+              src={require(isMobile ? e?.image.mobile : e?.image.tablet)}
             />
           </div>
 
