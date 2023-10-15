@@ -1,12 +1,8 @@
-import { Fragment } from "react";
-import { Home } from "@/Pages/Home/Index";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/Index";
 
 const App = () => {
-  return (
-    <Fragment>
-      <Home />
-    </Fragment>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
