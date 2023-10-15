@@ -1,32 +1,32 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
 // import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
 
-interface Headphone {
-  id: number;
-  image: {
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  };
-  title: string;
-  description: string;
-}
+// interface Headphone {
+//   id: number;
+//   image: {
+//     mobile: string;
+//     tablet: string;
+//     desktop: string;
+//   };
+//   title: string;
+//   description: string;
+// }
 
 export const ContentMobile = () => {
   // const [content, setContent] = useState<Headphone[]>([]);
 
   // const isMobile = window.innerWidth <= 640;
 
-  const fetchData = async () => {
-    const response = await axios.get("/src/data/Category/Category.json");
-    setContent(response.data);
-  };
+  // const fetchData = async () => {
+  //   const response = await axios.get("/src/data/Category/Category.json");
+  //   setContent(response.data);
+  // };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <section className="mt-16 mb-32 flex flex-col gap-32 px-6 sm:px-10">
