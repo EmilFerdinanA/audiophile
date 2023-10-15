@@ -7,7 +7,7 @@ export const HeroDesktop = () => {
         <span className="opacity-50 font-normal tracking-[10px]">
           NEW PRODUCT
         </span>
-        <h1 className="text-6xl font-bold">XX99 MARk II HEADPHONES</h1>
+        <h1 className="text-6xl font-bold">XX99 MARK II HEADPHONES</h1>
         <p className="opacity-75 font-medium w-3/5 mb-4">
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.

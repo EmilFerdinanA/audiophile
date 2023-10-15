@@ -7,7 +7,7 @@ export const HeroMobile = () => {
         NEW PRODUCT
       </span>
       <h1 className="text-4xl sm:text-6xl font-bold">
-        XX99 MARk II HEADPHONES
+        XX99 MARK II HEADPHONES
       </h1>
       <p className="mb-4 opacity-75 font-medium sm:w-1/2">
         Experience natural, lifelike audio and exceptional build quality made
