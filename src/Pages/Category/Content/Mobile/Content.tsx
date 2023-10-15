@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
+// import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
 
 interface Headphone {
   id: number;
@@ -15,9 +15,9 @@ interface Headphone {
 }
 
 export const ContentMobile = () => {
-  const [content, setContent] = useState<Headphone[]>([]);
+  // const [content, setContent] = useState<Headphone[]>([]);
 
-  const isMobile = window.innerWidth <= 640;
+  // const isMobile = window.innerWidth <= 640;
 
   const fetchData = async () => {
     const response = await axios.get("/src/data/Category/Category.json");
