@@ -2,10 +2,9 @@ export const dataCategory = [
   {
     id: 1,
     image: {
-      mobile: "./src/assets/category-headphones/mobile/image-xx99-mark-two.jpg",
-      tablet: "./src/assets/category-headphones/tablet/image-xx99-mark-two.jpg",
-      desktop:
-        "./src/assets/category-headphones/desktop/image-xx99-mark-two.jpg",
+      mobile: "public/category-headphones/mobile/image-xx99-mark-two.jpg",
+      tablet: "public/category-headphones/tablet/image-xx99-mark-two.jpg",
+      desktop: "public/category-headphones/desktop/image-xx99-mark-two.jpg",
     },
     title: "XX99 MARK II HEADPHONES",
     description:
