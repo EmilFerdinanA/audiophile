@@ -1,4 +1,4 @@
-import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
+// import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -27,7 +27,7 @@ export const ContentDesktop = () => {
 
   return (
     <section className="mt-16 mb-32 flex flex-col gap-32 px-6 sm:px-10">
-      {content?.map((e: Headphone, index: number) => (
+      {content?.map((e: Headphone) => (
         <div className="flex  gap-6 justify-center items-center" key={e.id}>
           {/* <div
             className={`w-1/2 bg-tertiary bg-cover bg-center h-[35rem] ${e?.image.desktop} rounded-lg`}
@@ -35,7 +35,7 @@ export const ContentDesktop = () => {
           <div>
             <img src={e?.image.desktop} />
           </div>
-          <div className="w-1/2">
+          {/* <div className="w-1/2">
             {index === 0 && (
               <span className="text-primary tracking-[10px]">NEW PRODUCT</span>
             )}
@@ -46,7 +46,7 @@ export const ContentDesktop = () => {
               {e?.description}
             </p>
             <ButtonSeeProduct />
-          </div>
+          </div> */}
         </div>
       ))}
     </section>
