@@ -18,7 +18,6 @@ export const ContentDesktop = () => {
 
   const fetchCategory = async () => {
     const response = await axios.get("src/data/Category/Category.json");
-    console.log(response);
 
     setContent(response.data);
   };
@@ -29,8 +28,8 @@ export const ContentDesktop = () => {
 
   return (
     <section className="mt-16 mb-32 flex flex-col gap-32 px-6 sm:px-10">
-      {content?.map((e: Headphone) => (
-        <div>
+      {content?.map((e: Headphone, index: number) => (
+        <div key={index}>
           <img src={e?.image.desktop} />
         </div>
       ))}
