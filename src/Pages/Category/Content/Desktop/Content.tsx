@@ -18,6 +18,8 @@ export const ContentDesktop = () => {
 
   const fetchCategory = async () => {
     const response = await axios.get("src/data/Category/Category.json");
+    console.log(response);
+
     setContent(response.data);
   };
 
