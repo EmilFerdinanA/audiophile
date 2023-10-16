@@ -22,13 +22,11 @@ export const ContentMobile = () => {
           className="flex flex-col gap-6 justify-center items-center"
           key={e.id}
         >
-          <div className={`bg-tertiary w-full rounded-lg`}>
-            <img
-              className="object-cover object-center w-full h-full"
-              src={isMobile ? e?.image.mobile : e?.image.tablet}
-            />
-          </div>
-
+          <div
+            className={`bg-tertiary bg-cover h-80 ${
+              isMobile ? e?.image.mobile : e?.image.tablet
+            } w-full rounded-lg`}
+          />
           {index === 0 && (
             <span className="text-primary tracking-[10px]">NEW PRODUCT</span>
           )}

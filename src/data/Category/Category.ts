@@ -2,9 +2,12 @@ export const dataCategory = [
   {
     id: 1,
     image: {
-      mobile: "public/category-headphones/mobile/image-xx99-mark-two.jpg",
-      tablet: "public/category-headphones/tablet/image-xx99-mark-two.jpg",
-      desktop: "public/category-headphones/desktop/image-xx99-mark-two.jpg",
+      mobile:
+        "bg-[url('@/assets/category-headphones/mobile/image-xx99-mark-two.jpg')]",
+      tablet:
+        "bg-[url('@/assets/category-headphones/tablet/image-xx99-mark-two.jpg')]",
+      desktop:
+        "bg-[url('@/assets/category-headphones/desktop/image-xx99-mark-two.jpg')]",
     },
     title: "XX99 MARK II HEADPHONES",
     description:
@@ -13,9 +16,12 @@ export const dataCategory = [
   {
     id: 2,
     image: {
-      mobile: "src/assets/category-headphones/mobile/image-xx99-mark-one.jpg",
-      tablet: "src/assets/category-headphones/tablet/image-xx99-mark-one.jpg",
-      desktop: "src/assets/category-headphones/desktop/image-xx99-mark-one.jpg",
+      mobile:
+        "bg-[url('@/assets/category-headphones/mobile/image-xx99-mark-one.jpg')]",
+      tablet:
+        "bg-[url('@/assets/category-headphones/tablet/image-xx99-mark-one.jpg')]",
+      desktop:
+        "bg-[url('@/assets/category-headphones/desktop/image-xx99-mark-one.jpg')]",
     },
     title: "XX99 MARK I HEADPHONES",
     description:
@@ -24,9 +30,10 @@ export const dataCategory = [
   {
     id: 3,
     image: {
-      mobile: "src/assets/category-headphones/mobile/image-xx59.jpg",
-      tablet: "src/assets/category-headphones/tablet/image-xx59.jpg",
-      desktop: "src/assets/category-headphones/desktop/image-xx59.jpg",
+      mobile: "bg-[url('@/assets/category-headphones/mobile/image-xx59.jpg')]",
+      tablet: "bg-[url('@/assets/category-headphones/tablet/image-xx59.jpg')]",
+      desktop:
+        "bg-[url('@/assets/category-headphones/desktop/image-xx59.jpg')]",
     },
     title: "XX59 HEADPHONES",
     description:
