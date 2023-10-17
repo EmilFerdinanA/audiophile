@@ -1,4 +1,4 @@
-import { ProductMobile } from "./Product/Mobile/Product";
+import { ProductMobile } from "./Mobile/Product";
 
 export const ProductDetail = () => {
   return (
