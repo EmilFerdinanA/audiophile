@@ -1,5 +1,5 @@
 import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
-import { data } from "@/data/Category/Category";
+import { data } from "@/data/Category";
 import { useParams } from "react-router-dom";
 import { ICategory } from "@/constant/Category";
 
