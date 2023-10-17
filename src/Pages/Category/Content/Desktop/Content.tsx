@@ -33,8 +33,8 @@ export const ContentDesktop = () => {
             {index === 0 && (
               <span className="text-primary tracking-[10px]">NEW PRODUCT</span>
             )}
-            <span className="text-6xl font-bold mb-4 w-4/5">{e?.title}</span>
-            <p className="font-medium text-septenary text-opacity-50 mb-9 w-4/5 text-xl">
+            <span className="text-5xl font-bold mb-4 w-full">{e?.title}</span>
+            <p className="font-medium text-septenary text-opacity-50 mb-9 w-4/5">
               {e?.description}
             </p>
             <ButtonSeeProduct />
