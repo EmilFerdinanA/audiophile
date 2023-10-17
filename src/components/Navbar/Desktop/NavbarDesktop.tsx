@@ -11,11 +11,15 @@ export const NavbarDesktop = () => {
         </div>
         <ul className="text-senary font-bold flex items-center gap-9">
           <li className="cursor-pointer hover:text-primary">HOME</li>
-          <Link to="/category" className="cursor-pointer hover:text-primary">
+          <Link to="/headphones" className="cursor-pointer hover:text-primary">
             HEADPHONES
           </Link>
-          <li className="cursor-pointer hover:text-primary">SPEAKERS</li>
-          <li className="cursor-pointer hover:text-primary">EARPHONES</li>
+          <Link to="/speakers" className="cursor-pointer hover:text-primary">
+            SPEAKERS
+          </Link>
+          <Link to="/earphones" className="cursor-pointer hover:text-primary">
+            EARPHONES
+          </Link>
         </ul>
         <div>
           <img src={Cart} alt="cart" />

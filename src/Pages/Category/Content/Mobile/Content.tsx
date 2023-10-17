@@ -1,43 +1,27 @@
 import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
-import axios from "axios";
-import { useEffect, useState } from "react";
-
-interface Headphone {
-  id: number;
-  image: {
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  };
-  title: string;
-  description: string;
-}
+import { data } from "@/data/Category/Category";
+import { useParams } from "react-router-dom";
+import { ICategory } from "@/constant/Category";
 
 export const ContentMobile = () => {
-  const [content, setContent] = useState<Headphone[]>([]);
   const isMobile = window.innerWidth <= 640;
-
-  const fetchCategory = async () => {
-    const response = await axios.get("src/data/Category/Category.json");
-    setContent(response.data);
-  };
-
-  useEffect(() => {
-    fetchCategory();
-  }, []);
-
+  const param = useParams();
+  const content = data.find((e) => e.category === param.category);
   return (
     <section className="mt-16 mb-32 flex flex-col gap-32 px-6 sm:px-10">
-      {content?.map((e: Headphone, index: number) => (
+      {content?.items?.map((e: ICategory, index: number) => (
         <div
           className="flex flex-col gap-6 justify-center items-center"
           key={e.id}
         >
-          <div
-            className={`bg-tertiary bg-cover bg-center h-80 sm:h-96 ${
-              isMobile ? e?.image.mobile : e?.image.tablet
-            } w-full rounded-lg`}
-          />
+          <div className="bg-tertiary bg-cover bg-center h-80 sm:h-96} w-full rounded-lg">
+            <img
+              className="object-cover h-full w-full"
+              src={isMobile ? e.image.mobile : e.image.tablet}
+              alt="item"
+            />
+          </div>
+
           {index === 0 && (
             <span className="text-primary tracking-[10px]">NEW PRODUCT</span>
           )}
