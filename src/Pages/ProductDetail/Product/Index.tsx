@@ -1,9 +1,10 @@
+import { Fragment } from "react";
+import { ProductDesktop } from "./Desktop/Product";
 import { ProductMobile } from "./Mobile/Product";
 
-export const ProductDetail = () => {
+export const Product = () => {
+  const isMobile = window.innerWidth <= 1280;
   return (
-    <div>
-      <ProductMobile />
-    </div>
+    <Fragment>{isMobile ? <ProductMobile /> : <ProductDesktop />}</Fragment>
   );
 };

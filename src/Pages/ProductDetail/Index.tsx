@@ -1,9 +1,9 @@
-import { ProductMobile } from "./Product/Mobile/Product";
+import { Product } from "./Product/Index";
 
 export const ProductDetail = () => {
   return (
     <div>
-      <ProductMobile />
+      <Product />
     </div>
   );
 };
