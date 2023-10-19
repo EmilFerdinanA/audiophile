@@ -1,3 +1,6 @@
+import { Category } from "@/components/Category/Index";
+import { Bringing } from "@/components/Bringing/Index";
+
 import { Features } from "./Features/Index";
 import { Product } from "./Product/Index";
 import { Image } from "./Image/Index";
@@ -10,6 +13,8 @@ export const ProductDetail = () => {
       <Features />
       <Image />
       <AlsoLike />
+      <Category />
+      <Bringing />
     </div>
   );
 };
