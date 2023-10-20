@@ -1,6 +1,7 @@
 import { FieldValues, UseFormRegister } from "react-hook-form";
 
 interface InputProps {
+  className?: string;
   type?: string;
   name: string;
   label: string;
@@ -8,13 +9,14 @@ interface InputProps {
 }
 
 export const Input: React.FC<InputProps> = ({
+  className,
   type = "text",
   label,
   name,
   register,
 }) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className={`flex flex-col gap-2 ${className}`}>
       <label className="text-xs font-bold">{label}</label>
       <input
         type={type}

@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[type="radio"] {
+  display: none;
+}
+
+.radio label {
+  padding-left: 52px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+}
+
+.radio label::after,
+.radio label::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+}
+
+.radio label::after {
+  height: 20px;
+  width: 20px;
+  left: 16px;
+  border: 1px solid #cfcfcf;
+}
+
+.radio label::before {
+  height: 10px;
+  width: 10px;
+  background-color: #d87d4a;
+  left: 21px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+[type="radio"]:checked ~ label::before {
+  visibility: visible;
+}
+
+[type="radio"]:checked ~ label {
+  border: 1px solid #d87d4a;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

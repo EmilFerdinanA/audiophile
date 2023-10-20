@@ -1,12 +1,11 @@
 import { FieldValues, UseFormRegister } from "react-hook-form";
-import "./Radio.css";
 
 interface InputProps {
+  label: string;
   name: string;
-  label?: string;
   value: string;
   onClick: () => void;
-  isChecked: boolean;
+  checked?: boolean;
   register: UseFormRegister<FieldValues>;
 }
 
@@ -15,32 +14,25 @@ export const Radio: React.FC<InputProps> = ({
   name,
   value,
   onClick,
-  isChecked,
+  checked,
   register,
 }) => {
   return (
-    <label
-      className="relative flex items-center gap-4 h-14 rounded-lg bg-senary z-10"
-      htmlFor="emil"
-      onClick={onClick}
-    >
+    <div className="radio h-14 rounded-lg bg-senary">
       <input
-        id="emil"
+        id={value}
         type="radio"
-        className="appearance-none"
         {...register(name)}
         value={value}
+        checked={checked}
       />
-      <div
-        className="border border-[#cfcfcf] h-[20px] w-[20px] rounded-full relative"
+      <label
+        className="relative flex items-center h-full w-full"
+        htmlFor={value}
         onClick={onClick}
       >
-        {isChecked && (
-          <div className="absolute bg-primary h-[10px] w-[10px] top-1 left-1 rounded-full" />
-        )}
-      </div>
-
-      <span className="text-sm font-bold">e-Money</span>
-    </label>
+        {label}
+      </label>
+    </div>
   );
 };
