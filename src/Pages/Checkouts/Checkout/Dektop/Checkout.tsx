@@ -11,8 +11,8 @@ export const CheckoutDesktop = () => {
     console.log(data);
   };
   return (
-    <div className="xl:flex">
-      <section className="mx-40 bg-tertiary rounded-lg px-12 py-14">
+    <div className="flex gap-8 mx-40">
+      <section className=" bg-senary rounded-lg px-12 py-14 w-2/3">
         <h1 className="text-3xl font-bold mb-8">CHECKOUT</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <section>
@@ -110,12 +110,9 @@ export const CheckoutDesktop = () => {
             </div>
           </section>
         </form>
-        <button onClick={handleSubmit(onSubmit)} type="submit">
-          Emil
-        </button>
       </section>
 
-      <section className="bg-[#cfcfcf] rounded-lg px-8 mx-40 py-8">
+      <section className="bg-senary rounded-lg px-8 py-8 w-4/12 h-full">
         <h1 className="text-lg font-bold mb-8">SUMMARY</h1>
         <div className="flex items-center justify-between">
           <div className="flex items-center h-16 gap-4">
