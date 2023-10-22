@@ -9,7 +9,7 @@ export const YX1 = () => {
         <ButtonSeeProduct
           Background="bg-none"
           Border={true}
-          Color="text-black"
+          Color="text-black hover:bg-septenary hover:text-senary"
         />
       </div>
     </section>

@@ -17,7 +17,10 @@ export const ZX9 = () => {
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </p>
-        <ButtonSeeProduct Background="bg-septenary" />
+        <ButtonSeeProduct
+          Background="bg-septenary"
+          Color="hover:bg-[#4C4C4C]"
+        />
       </div>
     </section>
   );
