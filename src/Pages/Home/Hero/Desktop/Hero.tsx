@@ -2,7 +2,7 @@ import { ButtonSeeProduct } from "@/components/ButtonSeeProduct";
 
 export const HeroDesktop = () => {
   return (
-    <section className="bg-[url('@/assets/hero-desktop.jpg')] bg-[right_top_-6rem] bg-no-repeat px-40 bg-[#191919] text-senary h-[39.5rem] mb-32">
+    <section className="bg-[url('@/assets/hero-desktop.jpg')] bg-[right_top_-6rem] bg-no-repeat px-40 bg-[#191919] text-senary h-[41rem] mb-32">
       <div className="w-1/2 h-full flex flex-col justify-center gap-6">
         <span className="opacity-50 font-normal tracking-[10px]">
           NEW PRODUCT
@@ -12,7 +12,7 @@ export const HeroDesktop = () => {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>
-        <ButtonSeeProduct />
+        <ButtonSeeProduct Color="hover:bg-[#FBAF85]" />
       </div>
     </section>
   );

@@ -10,21 +10,21 @@ export const CategoryDesktop = () => {
         <img className="relative -top-16" src={Headphones} alt="headphones" />
         <div className="flex flex-col items-center gap-4 mb-6">
           <span className="font-bold text-lg">HEADPHONES</span>
-          <ButtonShop />
+          <ButtonShop to="/headphones" />
         </div>
       </div>
       <div className="w-full h-52 mt-20 bg-tertiary rounded-lg flex flex-col justify-center items-center">
         <img className="relative -top-16" src={Speakers} alt="speakers" />
         <div className="flex flex-col items-center gap-4 mb-6">
           <span className="font-bold text-lg">SPEAKERS</span>
-          <ButtonShop />
+          <ButtonShop to="/speakers" />
         </div>
       </div>
       <div className="w-full h-52 mt-20 bg-tertiary rounded-lg flex flex-col justify-center items-center">
         <img className="relative -top-16" src={Earphones} alt="earphones" />
         <div className="flex flex-col items-center gap-4 mb-6">
           <span className="font-bold text-lg">EARPHONES</span>
-          <ButtonShop />
+          <ButtonShop to="/earphones" />
         </div>
       </div>
     </section>

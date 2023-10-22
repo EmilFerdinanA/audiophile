@@ -11,7 +11,7 @@ export const ButtonSeeProduct: React.FC<ButtonSeeProductProps> = ({
 }) => {
   return (
     <div
-      className={`w-40 text-sm h-12 font-bold flex justify-center items-center mt-3 ${
+      className={`w-40 text-sm h-12 font-bold flex justify-center items-center mt-3 cursor-pointer ${
         Border ? "border border-septenary" : ""
       } ${Background} ${Color}`}
     >

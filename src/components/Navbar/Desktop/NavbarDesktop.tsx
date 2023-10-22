@@ -1,16 +1,23 @@
+import { Link, useLocation } from "react-router-dom";
+
 import Audiophile from "@/assets/audiophile.svg";
 import Cart from "@/assets/icon-cart.svg";
-import { Link } from "react-router-dom";
 
 export const NavbarDesktop = () => {
+  const location = useLocation();
   return (
-    <section className="bg-[#191919]">
+    <section className="bg-[#191919] sticky top-0 z-10">
       <div className="flex justify-between items-center py-9 mx-40 border-b border-white border-opacity-10">
-        <div>
+        <Link to={location.pathname !== "/" ? "/" : ""}>
           <img src={Audiophile} alt="audiophile" />
-        </div>
+        </Link>
         <ul className="text-senary font-bold flex items-center gap-9">
-          <li className="cursor-pointer hover:text-primary">HOME</li>
+          <Link
+            to={location.pathname !== "/" ? "/" : ""}
+            className="cursor-pointer hover:text-primary"
+          >
+            HOME
+          </Link>
           <Link to="/headphones" className="cursor-pointer hover:text-primary">
             HEADPHONES
           </Link>
