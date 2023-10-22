@@ -4,7 +4,6 @@ interface InputProps {
   label: string;
   name: string;
   value: string;
-  onClick: () => void;
   checked?: boolean;
   register: UseFormRegister<FieldValues>;
 }
@@ -13,7 +12,6 @@ export const Radio: React.FC<InputProps> = ({
   label,
   name,
   value,
-  onClick,
   checked,
   register,
 }) => {
@@ -29,7 +27,6 @@ export const Radio: React.FC<InputProps> = ({
       <label
         className="relative flex items-center h-full w-full"
         htmlFor={value}
-        onClick={onClick}
       >
         {label}
       </label>

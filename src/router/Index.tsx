@@ -4,7 +4,7 @@ import { CategoryPage } from "@/Pages/Category/Index";
 import { HomePage } from "@/Pages/Home/Index";
 import { Root } from "@/Pages/Root";
 import { ProductDetail } from "@/Pages/ProductDetail/Index";
-import { Checkout } from "@/Pages/Checkout/Index";
+import { Checkouts } from "@/Pages/Checkouts/Index";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "checkout",
-        element: <Checkout />,
+        element: <Checkouts />,
       },
     ],
   },
