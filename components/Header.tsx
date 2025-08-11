@@ -7,11 +7,7 @@ const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 export const Header = () => {
   return (
     <ScrollHeader>
-      <div
-        className={
-          "containers !justify-between w-full border-b-1 border-white max-w-[1440px]"
-        }
-      >
+      <div className="containers !justify-between w-full border-b-1 border-white max-w-[1440px]">
         <img
           className="md:absolute lg:hidden"
           src="/assets/icon-hamburger.svg"
