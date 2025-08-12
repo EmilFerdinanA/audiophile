@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { ScrollHeader } from "./ScrollHeader";
 
 const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 
 export const Header = () => {
   return (
-    <ScrollHeader>
+    <div className="sticky bg-[#191919] flex justify-center h-24 top-0 w-full z-50 px-6 md:px-10 lg:px-40">
       <div className="containers !justify-between w-full border-b-1 border-white max-w-[1440px]">
         <img
           className="md:absolute lg:hidden"
@@ -32,6 +31,6 @@ export const Header = () => {
 
         <img src="/assets/icon-cart.svg" alt="logo" />
       </div>
-    </ScrollHeader>
+    </div>
   );
 };
