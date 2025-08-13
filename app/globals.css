@@ -34,7 +34,7 @@ body {
   @apply bg-[url(/assets/home/mobile/image-header.jpg)] 
       md:bg-[url(/assets/home/tablet/image-header.jpg)] 
       lg:bg-[url(/assets/home/desktop/image-hero.jpg)]
-      bg-cover bg-position-[center_bottom_1rem];
+      bg-cover bg-position-[center_bottom_0.5rem];
 }
 
 .base-p {

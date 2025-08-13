@@ -3,8 +3,10 @@ import { SeeProductButton } from "./SeeProduct";
 export const Hero = () => {
   return (
     <div className="bg-[#191919]">
-      <div className="containers background-hero h-[40rem] max-w-[1440px] base-p">
-        <div className="containers flex-col text-white gap-4">
+      {/* Container */}
+      <div className="containers background-hero h-[36rem] max-w-[1440px] base-p">
+        {/* Content */}
+        <div className="containers flex-col text-white text-center gap-4">
           <span className="opacity-50 tracking-[10px] text-sm">
             NEW PRODUCT
           </span>
