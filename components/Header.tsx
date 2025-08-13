@@ -5,11 +5,11 @@ const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 
 export const Header = () => {
   return (
-    <div className="sticky bg-[#191919] flex justify-center h-24 top-0 z-50">
+    <div className="sticky bg-[#191919] flex justify-center h-24 top-0 z-50 border-b-1 border-white/20 md:border-none">
       {/* Container */}
       <div className="max-w-[1440px] base-p w-full">
         {/* Content */}
-        <div className="containers !justify-between border-b-1 border-white/20 h-full">
+        <div className="containers !justify-between md:border-b-1 border-white/20 h-full">
           <img
             className="md:absolute lg:hidden"
             src="/assets/icon-hamburger.svg"
@@ -23,7 +23,7 @@ export const Header = () => {
             <img src="/assets/logo.svg" alt="logo" />
           </Link>
 
-          <ul className={"hidden lg:flex gap-8 subtitle text-white font-bold"}>
+          <ul className={"hidden lg:flex gap-8 text-white font-bold"}>
             {MENUS.map((menu, index) => (
               <li key={index} className="hover:text-[#D87D4A] cursor-pointer">
                 <Link
