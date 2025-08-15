@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <div className="bg-[#191919] containers">
       {/* Container */}
-      <div className="containers background-hero h-[36rem] md:h-[45rem] max-w-[1440px] base-p w-full lg:!justify-start">
+      <div className="containers background-hero h-[35rem] md:h-[41rem] max-w-[1440px] base-p w-full lg:!justify-start">
         {/* Content */}
         <div className="containers lg:!items-start flex-col text-white text-center lg:text-left gap-4 md:w-96">
           <span className="opacity-50 tracking-[10px] text-sm md:mb-2">
