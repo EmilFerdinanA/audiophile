@@ -28,10 +28,8 @@ export const SeeProductButton: React.FC<ButtonProps> = ({
 export const ShopButton = () => {
   return (
     <button className="font-bold containers hover:text-[#D87D4A] gap-3 cursor-pointer">
-      SHOP
-      <span>
-        <Image src={Arrow} alt={"arrow"} />
-      </span>
+      <span className="opacity-50 hover:opacity-100 text-[13px]">SHOP</span>
+      <Image src={Arrow} alt={"arrow"} />
     </button>
   );
 };

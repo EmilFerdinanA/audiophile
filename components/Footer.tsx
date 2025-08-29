@@ -3,7 +3,7 @@ const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 
 export const Footer = () => {
   return (
-    <div className="mt-40 containers !items-start bg-[#191919] text-white pb-9 md:pb-12">
+    <div className="containers !items-start bg-[#191919] text-white pb-9 md:pb-12">
       <div className="containers md:!items-start gap-12 flex-col max-w-[1440px] base-p w-full">
         <div className="h-1 w-28 bg-[#D87D4A] md:mb-2 lg:mb-6" />
 
