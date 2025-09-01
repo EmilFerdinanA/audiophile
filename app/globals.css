@@ -37,6 +37,10 @@ body {
       bg-cover;
 }
 
+.background-zx9 {
+  @apply bg-[url(/assets/home/desktop/pattern-circles.svg)] bg-cover md:bg-auto bg-no-repeat bg-position-[center_bottom_8rem] md:bg-position-[center_bottom_3rem];
+}
+
 .base-p {
   @apply px-6 md:px-10 lg:px-40;
 }
