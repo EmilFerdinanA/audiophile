@@ -55,3 +55,11 @@ body {
 .container-zx9 {
   @apply flex justify-center items-center flex-col lg:flex-row lg:items-end;
 }
+
+/* ZX7 */
+.background-zx7 {
+  @apply bg-[url(/assets/home/mobile/image-speaker-zx7.jpg)] 
+        md:bg-[url(/assets/home/tablet/image-speaker-zx7.jpg)] 
+        lg:bg-[url(/assets/home/desktop/image-speaker-zx7.jpg)] 
+        bg-cover;
+}

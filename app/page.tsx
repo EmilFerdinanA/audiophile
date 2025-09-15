@@ -1,5 +1,6 @@
 import Category from "@/components/Category";
 import { Hero } from "@/components/Hero";
+import ZX7 from "@/components/ZX7";
 import ZX9 from "@/components/ZX9";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           </section>
 
           <ZX9 />
+          <ZX7 />
         </div>
       </main>
     </>
