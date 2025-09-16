@@ -1,4 +1,5 @@
 import Category from "@/components/Category";
+import { Bringing } from "@/components/Bringing";
 import { Hero } from "@/components/Hero";
 import YX1 from "@/components/YX1";
 import ZX7 from "@/components/ZX7";
@@ -20,6 +21,7 @@ export default function Home() {
           <ZX9 />
           <ZX7 />
           <YX1 />
+          <Bringing />
         </div>
       </main>
     </>
