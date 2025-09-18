@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <main className="containers !flex-col pt-24 md:pt-36 lg:pt-52">
+      <main className="containers !flex-col pt-24 md:pt-36 lg:pt-52 pb-32 md:pb-24 lg:pb-52">
         <div className="w-full max-w-[1440px] base-p">
           <section className="containers !flex-col md:!flex-row gap-20 md:gap-2.5 lg:gap-8">
             <Category />

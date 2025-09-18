@@ -1,6 +1,6 @@
 export const Bringing = () => {
   return (
-    <section className="text-center lg:text-left flex flex-col lg:flex-row-reverse lg:items-center gap-10 md:gap-16 lg:gap-8 mb-32 md:mb-24 lg:mb-52">
+    <section className="text-center lg:text-left flex flex-col lg:flex-row-reverse lg:items-center gap-10 md:gap-16 lg:gap-8">
       <div className="background-bringing h-80 lg:h-[568px] lg:w-1/2 rounded-lg" />
       <div className="flex flex-col gap-8 px-7 md:px-20 lg:px-0 lg:pr-24 lg:w-1/2">
         <h1 className="uppercase text-2xl md:text-[40px] tracking-[1.43px] font-bold">
