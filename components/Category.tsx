@@ -4,7 +4,7 @@ import HEADPHONES from "@/public/assets/shared/desktop/image-headphones.png";
 
 export default function Category() {
   return (
-    <div className="bg-[#F1F1F1] h-40 lg:h-52 w-full relative containers !flex-col !justify-end pb-5 lg:pb-8 rounded-lg">
+    <div className="bg-[#F1F1F1] h-40 lg:h-52 w-full relative containers !flex-col !justify-end pb-5 lg:pb-8 rounded-lg mt-16">
       <Image
         src={HEADPHONES}
         alt={"HEADPHONES"}

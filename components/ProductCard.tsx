@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { SeeProductButton } from "./SeeProduct";
 
 interface IProps {
@@ -6,12 +7,12 @@ interface IProps {
 }
 
 export const ProductCard = ({ data, index }: IProps) => {
-  console.log(data);
   return (
     <div
-      className={`containers !flex-col ${
+      className={clsx(
+        "containers !flex-col gap-8 md:gap-14 lg:gap-2.5",
         index % 2 === 0 ? "lg:!flex-row" : "lg:!flex-row-reverse"
-      } gap-8 md:gap-14 lg:gap-2.5`}
+      )}
     >
       <picture className="w-full lg:w-1/2">
         <source media="(min-width:1024px)" srcSet={data.image.desktop} />
@@ -24,9 +25,10 @@ export const ProductCard = ({ data, index }: IProps) => {
       </picture>
 
       <div
-        className={`containers !flex-col gap-6 text-center md:px-14 lg:px-0 ${
+        className={clsx(
+          "containers !flex-col gap-6 text-center md:px-14 lg:px-0 lg:w-1/2 lg:text-left lg:!items-start",
           index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
-        } lg:w-1/2 lg:text-left lg:!items-start`}
+        )}
       >
         {index === 0 && (
           <h2 className="text-sm tracking-[10px] text-primary">NEW PRODUCT</h2>
