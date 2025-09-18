@@ -1,8 +1,9 @@
 import clsx from "clsx";
 import { SeeProductButton } from "./SeeProduct";
+import { ICategory } from "@/interface/category";
 
 interface IProps {
-  data: any;
+  data: ICategory;
   index: number;
 }
 
