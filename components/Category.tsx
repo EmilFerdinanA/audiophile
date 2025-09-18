@@ -1,17 +1,12 @@
-import Image from "next/image";
-import { ShopButton } from "./SeeProduct";
-import HEADPHONES from "@/public/assets/shared/desktop/image-headphones.png";
+import { dataCategorySection } from "@/public/data/categorySection";
+import { CategoryCard } from "./CategoryCard";
 
-export default function Category() {
+export const Category = () => {
   return (
-    <div className="bg-[#F1F1F1] h-40 lg:h-52 w-full relative containers !flex-col !justify-end pb-5 lg:pb-8 rounded-lg mt-16">
-      <Image
-        src={HEADPHONES}
-        alt={"HEADPHONES"}
-        className="absolute -top-16 w-40 lg:w-52"
-      />
-      <span className="font-bold text-[15px] lg:text-lg mb-4">HEADPHONES</span>
-      <ShopButton />
-    </div>
+    <section className="containers !flex-col md:!flex-row gap-20 md:gap-2.5 lg:gap-8">
+      {dataCategorySection.map((e) => (
+        <CategoryCard key={e.id} title={e.title} images={e.images} />
+      ))}
+    </section>
   );
-}
+};
