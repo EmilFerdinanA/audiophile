@@ -32,6 +32,10 @@ body {
   align-items: center;
 }
 
+.max-width {
+  max-width: 1440px;
+}
+
 .background-hero {
   @apply bg-[url(/assets/home/mobile/image-header.jpg)] 
       md:bg-[url(/assets/home/tablet/image-header.jpg)] 
