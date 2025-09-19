@@ -26,7 +26,7 @@ export const Header = () => {
           <ul className={"hidden lg:flex gap-8 text-white font-bold"}>
             {MENUS.map((menu, index) => (
               <li key={index} className="hover:text-[#D87D4A] cursor-pointer">
-                <Link href={menu === "HOME" ? "/" : `${menu.toLowerCase()}`}>
+                <Link href={menu === "HOME" ? "/" : `/${menu.toLowerCase()}`}>
                   {menu}
                 </Link>
               </li>

@@ -1,13 +1,16 @@
 import React from "react";
 import Arrow from "@/public/assets/icon-arrow-right.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ButtonProps {
   variant?: "primary" | "secondary" | "tertiary";
+  url?: string;
 }
 
 export const SeeProductButton: React.FC<ButtonProps> = ({
   variant = "primary",
+  url,
 }) => {
   const variantStyles = {
     primary: "bg-[#D87D4A] hover:bg-[#FBAF85] text-white",
@@ -17,11 +20,12 @@ export const SeeProductButton: React.FC<ButtonProps> = ({
   };
 
   return (
-    <button
-      className={`h-12 w-40 font-bold tracking-[1px] text-sm cursor-pointer ${variantStyles[variant]}`}
+    <Link
+      className={`containers h-12 w-40 font-bold tracking-[1px] text-sm cursor-pointer ${variantStyles[variant]}`}
+      href={url ?? ""}
     >
       SEE PRODUCT
-    </button>
+    </Link>
   );
 };
 

@@ -42,7 +42,7 @@ export const ProductCard = ({ data, index }: IProps) => {
           {data.description}
         </p>
 
-        <SeeProductButton />
+        <SeeProductButton url={data.url} />
       </div>
     </div>
   );

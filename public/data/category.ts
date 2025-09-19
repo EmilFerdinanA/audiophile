@@ -12,6 +12,7 @@ export const dataCategory = [
           tablet: "assets/category-headphones/tablet/image-xx99-mark-two.jpg",
           desktop: "assets/category-headphones/desktop/image-xx99-mark-two.jpg",
         },
+        url: "headphones/xx99II",
       },
       {
         id: 2,
@@ -23,6 +24,7 @@ export const dataCategory = [
           tablet: "assets/category-headphones/tablet/image-xx99-mark-one.jpg",
           desktop: "assets/category-headphones/desktop/image-xx99-mark-one.jpg",
         },
+        url: "headphones/xx99I",
       },
       {
         id: 3,
@@ -34,6 +36,7 @@ export const dataCategory = [
           tablet: "assets/category-headphones/tablet/image-xx59.jpg",
           desktop: "assets/category-headphones/desktop/image-xx59.jpg",
         },
+        url: "headphones/xx59",
       },
     ],
   },
@@ -50,6 +53,7 @@ export const dataCategory = [
           tablet: "assets/category-earphones/tablet/image-yx1-earphones.jpg",
           desktop: "assets/category-earphones/desktop/image-yx1-earphones.jpg",
         },
+        url: "earphones/yx1",
       },
     ],
   },
@@ -66,6 +70,7 @@ export const dataCategory = [
           tablet: "assets/category-speakers/tablet/image-zx9.jpg",
           desktop: "assets/category-speakers/desktop/image-zx9.jpg",
         },
+        url: "speakers/zx9",
       },
       {
         id: 2,
@@ -77,6 +82,7 @@ export const dataCategory = [
           tablet: "assets/category-speakers/tablet/image-zx7.jpg",
           desktop: "assets/category-speakers/desktop/image-zx7.jpg",
         },
+        url: "speakers/zx7",
       },
     ],
   },
