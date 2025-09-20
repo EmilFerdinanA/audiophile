@@ -34,7 +34,7 @@ export const AlsoLike = () => {
         you may also like
       </h1>
 
-      <div className="containers !flex-col md:!flex-row gap-14 md:gap-2.5 lg:gap-8">
+      <div className="containers !flex-col md:!flex-row gap-14 md:gap-2.5 lg:gap-8 w-full">
         {DUMMY_IMAGE.map(({ title, image }) => (
           <AlsoLikeCard key={title} title={title} image={image} />
         ))}
