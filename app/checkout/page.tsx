@@ -1,3 +1,4 @@
+import { Checkout } from "@/components/Checkout";
 import { Summary } from "@/components/Summary";
 
 export default function page() {
@@ -9,9 +10,7 @@ export default function page() {
         </button>
 
         <div className="grid grid-cols-20 gap-y-5 md:gap-y-8 lg:gap-x-8 items-start">
-          <section className="h-[1378px] bg-white col-span-20 lg:col-span-13">
-            <h1>Checkout</h1>
-          </section>
+          <Checkout />
 
           <Summary />
         </div>
