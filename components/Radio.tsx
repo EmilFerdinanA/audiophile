@@ -1,11 +1,15 @@
 import clsx from "clsx";
+import { useFormContext } from "react-hook-form";
 
 interface IProps {
   id: string;
   label: string;
   className?: string;
+  name: string;
+  value: string;
 }
-export const Radio = ({ label, className, id }: IProps) => {
+export const Radio = ({ label, className, id, name, value }: IProps) => {
+  const { register } = useFormContext();
   return (
     <div
       className={clsx(
@@ -17,9 +21,9 @@ export const Radio = ({ label, className, id }: IProps) => {
       <input
         type="radio"
         id={id}
-        name="person"
-        value="emil"
+        value={value}
         className="peer hidden"
+        {...register(name)}
         defaultChecked
       />
       <label

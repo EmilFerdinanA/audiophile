@@ -1,12 +1,15 @@
 import clsx from "clsx";
+import { useFormContext } from "react-hook-form";
 
 interface IProps {
+  name: string;
   className?: string;
   label: string;
   placeholder: string;
 }
 
-export const Input = ({ className, label, placeholder }: IProps) => {
+export const Input = ({ className, label, placeholder, name }: IProps) => {
+  const { register } = useFormContext();
   return (
     <div className={clsx("w-full flex flex-col gap-2", className)}>
       <div className="flex justify-between">
@@ -18,6 +21,7 @@ export const Input = ({ className, label, placeholder }: IProps) => {
         className="h-14 w-full rounded-lg border border-[#CFCFCF] focus:border-primary outline-none px-6"
         type="text"
         placeholder={placeholder}
+        {...register(name)}
       />
     </div>
   );

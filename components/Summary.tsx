@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { useFormContext } from "react-hook-form";
 
 export const Summary = () => {
+  const { handleSubmit } = useFormContext();
+  const onSubmit = (data: any) => {
+    console.log("DATA", data);
+  };
   return (
     <section className="px-6 md:px-8 py-8 bg-white col-span-20 lg:col-span-7 flex flex-col gap-8 rounded-lg">
       <h1 className="uppercase text-lg tracking-[1.29px] font-bold">Summary</h1>
@@ -59,7 +64,10 @@ export const Summary = () => {
         </div>
       </dl>
 
-      <button className="containers bg-primary text-sm text-white h-12 font-bold">
+      <button
+        onClick={handleSubmit(onSubmit)}
+        className="containers bg-primary text-sm text-white h-12 font-bold"
+      >
         CONTINUE & PAY
       </button>
     </section>

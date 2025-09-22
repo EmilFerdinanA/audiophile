@@ -1,5 +1,4 @@
-import { Checkout } from "@/components/Checkout";
-import { Summary } from "@/components/Summary";
+import { CheckoutContainer } from "./container";
 
 export default function page() {
   return (
@@ -9,11 +8,7 @@ export default function page() {
           Go Back
         </button>
 
-        <div className="grid grid-cols-20 gap-y-5 md:gap-y-8 lg:gap-x-8 items-start">
-          <Checkout />
-
-          <Summary />
-        </div>
+        <CheckoutContainer />
       </div>
     </main>
   );
