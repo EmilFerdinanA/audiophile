@@ -1,5 +1,6 @@
 import React from "react";
 import { Input } from "./Input";
+import { Radio } from "./Radio";
 
 export const Checkout = () => {
   return (
@@ -58,6 +59,28 @@ export const Checkout = () => {
               label="Country"
               className="col-span-2 md:col-span-1"
               placeholder={"United States"}
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-primary tracking-[1px] text-[13px] font-bold uppercase mb-4">
+            payment details
+          </h2>
+
+          <div className="grid grid-cols-2 gap-6 md:gap-4">
+            <label className="text-[12px] font-bold col-span-2 md:col-span-1">
+              Payment Method
+            </label>
+            <Radio
+              id={"e-money"}
+              label="e-Money"
+              className="col-span-2 md:col-span-1"
+            />
+            <Radio
+              id={"cod"}
+              label="Cash on Delivery"
+              className="col-span-2 md:col-span-1 md:col-start-2"
             />
           </div>
         </div>
