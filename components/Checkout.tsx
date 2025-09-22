@@ -4,7 +4,7 @@ import { Radio } from "./Radio";
 
 export const Checkout = () => {
   return (
-    <section className="h-[1378px] bg-white col-span-20 lg:col-span-13 rounded-lg p-6 md:px-7 md:py-8 lg:px-12 lg:py-14">
+    <section className="bg-white col-span-20 lg:col-span-13 rounded-lg p-6 md:px-7 md:py-8 lg:px-12 lg:py-14">
       <div className="flex flex-col gap-8 md:gap-12">
         <h1 className="font-bold text-[1.75rem] md:text-[2rem] tracking-[1px] uppercase break-words">
           Checkout
@@ -81,6 +81,16 @@ export const Checkout = () => {
               id={"cod"}
               label="Cash on Delivery"
               className="col-span-2 md:col-span-1 md:col-start-2"
+            />
+            <Input
+              label={"e-Money Number"}
+              placeholder={"238521993"}
+              className="col-span-2 md:col-span-1"
+            />
+            <Input
+              label={"e-Money PIN"}
+              placeholder={"6891"}
+              className="col-span-2 md:col-span-1"
             />
           </div>
         </div>
