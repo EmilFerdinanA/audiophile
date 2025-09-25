@@ -1,6 +1,7 @@
 "use client";
 
 import { Checkout } from "@/components/Checkout";
+import { Modal } from "@/components/Modal";
 import { Summary } from "@/components/Summary";
 import { FormProvider, useForm } from "react-hook-form";
 
@@ -9,6 +10,7 @@ export const CheckoutContainer = () => {
   return (
     <div className="grid grid-cols-20 gap-y-5 md:gap-y-8 lg:gap-x-8 items-start">
       <FormProvider {...methods}>
+        <Modal />
         <Checkout />
         <Summary />
       </FormProvider>
