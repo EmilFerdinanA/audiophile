@@ -18,7 +18,7 @@ export const CategoryCard = ({ images, title }: IProps) => {
         priority
       />
       <span className="font-bold text-[15px] lg:text-lg mb-4">{title}</span>
-      <ShopButton />
+      <ShopButton url={title} />
     </div>
   );
 };

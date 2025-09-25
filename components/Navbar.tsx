@@ -1,9 +1,12 @@
+import { useMenu } from "@/Context/MenuContext";
 import Image from "next/image";
 import Link from "next/link";
 
 const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 
 export const Navbar = () => {
+  const { toggleMenu } = useMenu();
+
   return (
     <nav className="sticky flex bg-[#191919] h-24 top-0 z-50">
       {/* Container */}
@@ -17,6 +20,7 @@ export const Navbar = () => {
             height={15}
             className="md:absolute lg:hidden"
             priority
+            onClick={toggleMenu}
           />
 
           <Link

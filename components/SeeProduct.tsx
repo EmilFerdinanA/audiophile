@@ -1,4 +1,3 @@
-import React from "react";
 import Arrow from "@/public/assets/icon-arrow-right.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,11 +28,14 @@ export const SeeProductButton: React.FC<ButtonProps> = ({
   );
 };
 
-export const ShopButton = () => {
+export const ShopButton = ({ url }: { url: string }) => {
   return (
-    <button className="font-bold containers hover:text-[#D87D4A] gap-3 cursor-pointer">
+    <Link
+      href={url.toLowerCase()}
+      className="font-bold containers hover:text-primary gap-3 cursor-pointer"
+    >
       <span className="opacity-50 hover:opacity-100 text-[13px]">SHOP</span>
       <Image src={Arrow} alt={"arrow"} />
-    </button>
+    </Link>
   );
 };
