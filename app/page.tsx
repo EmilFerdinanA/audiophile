@@ -10,15 +10,13 @@ export default function Home() {
     <main>
       <Hero />
       {/* Wrapper */}
-      <div className="containers !flex-col pt-24 pb-32 md:pt-36 md:pb-24 lg:py-52">
+      <div className="max-width mx-auto base-p pt-24 md:pt-36 pb-32 md:pb-24 lg:py-52">
         {/* Content */}
-        <div className="max-width base-p">
-          <Category />
-          <ZX9 />
-          <ZX7 />
-          <YX1 />
-          <Bringing />
-        </div>
+        <Category />
+        <ZX9 />
+        <ZX7 />
+        <YX1 />
+        <Bringing />
       </div>
     </main>
   );

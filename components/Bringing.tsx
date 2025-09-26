@@ -1,13 +1,28 @@
 export const Bringing = () => {
   return (
-    <section className="text-center lg:text-left flex flex-col lg:flex-row-reverse lg:items-center gap-10 md:gap-16 lg:gap-8">
-      <div className="background-bringing h-80 lg:h-[568px] lg:w-1/2 rounded-lg" />
-      <div className="flex flex-col gap-8 px-7 md:px-20 lg:px-0 lg:pr-24 lg:w-1/2">
-        <h1 className="uppercase text-2xl md:text-[40px] tracking-[1.43px] font-bold">
+    <section className="grid grid-cols-2 text-center lg:text-left gap-10 md:gap-16 lg:gap-8">
+      <picture className="col-span-2 lg:col-span-1 lg:col-start-2">
+        <source
+          media="(min-width:1024px)"
+          srcSet={"/assets/shared/desktop/image-best-gear.jpg"}
+        />
+        <source
+          media="(min-width:768px)"
+          srcSet={"/assets/shared/tablet/image-best-gear.jpg"}
+        />
+        <img
+          className="rounded-lg object-center object-cover"
+          src={"/assets/shared/mobile/image-best-gear.jpg"}
+          alt="Bringing"
+        />
+      </picture>
+
+      <div className="col-span-2 lg:col-span-1 lg:row-start-1 grid place-content-center gap-8 md:px-14 lg:px-0 lg:pr-24">
+        <h1 className="uppercase text-2xl md:text-[2.5rem] tracking-[1.43px] font-bold px-2 md:px-0">
           Bringing you the <span className="text-primary">best</span> audio gear
         </h1>
 
-        <p className="opacity-50 text-sm">
+        <p className="opacity-50 text-[0.938rem] leading-6">
           Located at the heart of New York City, Audiophile is the premier store
           for high end headphones, earphones, speakers, and audio accessories.
           We have a large showroom and luxury demonstration rooms available for
