@@ -49,17 +49,17 @@ body {
 
 /* ZX9 */
 .background-zx9 {
-  @apply bg-[url(/assets/home/desktop/pattern-circles.svg)]
-         bg-[var(--primary)]
-         bg-cover
-         md:bg-auto
-         bg-no-repeat;
+  background-color: var(--primary);
+  background-image: url("/assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center bottom 8rem;
 }
 
 @media (min-width: 768px) {
   .background-zx9 {
     background-position: center bottom 3rem;
+    background-size: auto;
   }
 }
 
