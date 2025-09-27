@@ -1,11 +1,11 @@
-import { IDetailProduct } from "@/public/data/detailProduct";
+import { DataDetailProduct } from "@/public/data/detailProduct";
 
 interface IProps {
-  data: IDetailProduct;
+  data: DataDetailProduct;
 }
 
 export const DetailProduct = ({ data }: IProps) => {
-  const { image, title, description, price, new_product } = data.data;
+  const { image, title, description, price, new_product } = data;
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-2 gap-8 md:gap-16 lg:gap-0">

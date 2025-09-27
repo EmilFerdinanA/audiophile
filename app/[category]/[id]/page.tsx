@@ -12,7 +12,7 @@ interface IProps {
 
 export default async function page({ params }: IProps) {
   const { id } = await params;
-  const data = dataDetailProduct.find((e) => e.id === id)!;
+  const { data } = dataDetailProduct.find((e) => e.id === id)!;
 
   return (
     <main className="grid max-width base-p mx-auto gap-32 lg:gap-40 pb-32 lg:pb-40 pt-4 md:pt-8 lg:pt-20">
@@ -21,7 +21,7 @@ export default async function page({ params }: IProps) {
       </button>
 
       <DetailProduct data={data} />
-      <Features />
+      <Features data={data} />
       <DetailImage />
       <AlsoLike />
       <Category />

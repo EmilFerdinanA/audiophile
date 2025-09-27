@@ -14,16 +14,45 @@ export const dataDetailProduct = [
       },
       url: "headphones/xx99II",
       new_product: true,
+      features:
+        "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound. \nThe YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.",
+      in_the_box: [
+        {
+          id: 1,
+          stock: 2,
+          unit: "Earphone Unit",
+        },
+        {
+          id: 2,
+          stock: 6,
+          unit: "Multi-size Earplugs",
+        },
+        {
+          id: 3,
+          stock: 1,
+          unit: "User Manual",
+        },
+        {
+          id: 4,
+          stock: 1,
+          unit: "USB-C Charging Cable",
+        },
+        {
+          id: 5,
+          stock: 1,
+          unit: "Travel Pouch",
+        },
+      ],
     },
   },
 ];
 
 export interface IDetailProduct {
   id: string;
-  data: Data;
+  data: DataDetailProduct;
 }
 
-export interface Data {
+export interface DataDetailProduct {
   id: number;
   title: string;
   description: string;
@@ -31,10 +60,18 @@ export interface Data {
   image: Image;
   url: string;
   new_product: boolean;
+  features: string;
+  in_the_box: Inthebox[];
 }
 
 interface Image {
   mobile: string;
   tablet: string;
   desktop: string;
+}
+
+interface Inthebox {
+  id: number;
+  stock: number;
+  unit: string;
 }

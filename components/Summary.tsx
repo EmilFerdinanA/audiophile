@@ -3,7 +3,7 @@ import { useFormContext } from "react-hook-form";
 
 export const Summary = () => {
   const { handleSubmit } = useFormContext();
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: unknown) => {
     console.log("DATA", data);
   };
   return (
