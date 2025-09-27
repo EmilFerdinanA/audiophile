@@ -53,19 +53,22 @@ body {
   background-image: url("/assets/home/desktop/pattern-circles.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom 8rem;
+  background-position-x: center;
+  background-position-y: calc(100% - 8rem);
 }
 
 @media (min-width: 768px) {
   .background-zx9 {
-    background-position: center bottom 3rem;
     background-size: auto;
+    background-position-x: center;
+    background-position-y: calc(100% - 3rem);
   }
 }
 
 @media (min-width: 1024px) {
   .background-zx9 {
-    background-position: top -2.5rem left -8rem;
+    background-position-x: -8rem;
+    background-position-y: -2.5rem;
   }
 }
 
