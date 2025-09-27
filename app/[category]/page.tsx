@@ -16,8 +16,8 @@ export default async function page({ params }: IProps) {
     <main>
       <Hero2 labelHero={data?.category || ""} />
 
-      <div className="containers !flex-col pt-16 md:pt-32 lg:pt-40 pb-32 lg:pb-40">
-        <div className="w-full max-w-[1440px] base-p flex flex-col gap-32">
+      <div className="pt-16 md:pt-32 lg:pt-40 pb-32 lg:pb-40">
+        <div className="max-width base-p mx-auto grid gap-32">
           <Product data={data?.data ?? []} />
           <Category />
           <Bringing />

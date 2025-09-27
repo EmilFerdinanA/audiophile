@@ -7,7 +7,7 @@ interface IProps {
 
 export default function Product({ data }: IProps) {
   return (
-    <section className="containers !flex-col gap-32 lg:gap-40">
+    <section className="grid gap-32 lg:gap-40">
       {data?.map((e, index) => (
         <ProductCard key={e.id} data={e} index={index} />
       ))}

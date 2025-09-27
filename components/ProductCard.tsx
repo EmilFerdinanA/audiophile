@@ -9,38 +9,43 @@ interface IProps {
 
 export const ProductCard = ({ data, index }: IProps) => {
   return (
-    <div
-      className={clsx(
-        "containers !flex-col gap-8 md:gap-14 lg:gap-2.5",
-        index % 2 === 0 ? "lg:!flex-row" : "lg:!flex-row-reverse"
-      )}
-    >
-      <picture className="w-full lg:w-1/2">
+    <div className={clsx("grid grid-cols-2 gap-8 md:gap-14 lg:gap-2.5")}>
+      <picture
+        className={clsx(
+          "col-span-2 lg:col-span-1",
+          index % 2 !== 0 && "order-2"
+        )}
+      >
         <source media="(min-width:1024px)" srcSet={data.image.desktop} />
         <source media="(min-width:768px)" srcSet={data.image.tablet} />
         <img
           src={data.image.mobile}
           alt="XX99 Mark II"
-          className="h-[352px] lg:h-[560px] w-full rounded-lg object-cover object-center"
+          className="h-[22rem] lg:h-[35rem] w-full rounded-lg object-cover object-center"
         />
       </picture>
 
       <div
         className={clsx(
-          "containers !flex-col gap-6 text-center md:px-14 lg:px-0 lg:w-1/2 lg:text-left lg:!items-start",
+          "col-span-2 lg:col-span-1 gap-6 grid place-items-center lg:place-items-start lg:place-content-center text-center lg:text-left md:px-14 lg:px-0",
           index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
         )}
       >
         {index === 0 && (
-          <h2 className="text-sm tracking-[10px] text-primary">NEW PRODUCT</h2>
+          <h2 className="text-sm tracking-[10px] text-primary md:-mb-2">
+            NEW PRODUCT
+          </h2>
         )}
 
-        <h1 className="uppercase text-[1.75rem] md:text-[2.5rem]/[44px] tracking-[1px] md:tracking-[1.43px] font-bold px-2 lg:px-0">
-          {data.title}
+        <h1 className="uppercase text-[1.75rem] md:text-[2.5rem]/[44px] tracking-[1px] md:tracking-[1.43px] font-bold md:mb-2">
+          {data.title.split(" ").map((char, i) => (
+            <span key={i} className="last:block">
+              {char}{" "}
+            </span>
+          ))}
         </h1>
-        <p className="text-[0.938rem] opacity-50 md:px-2 lg:px-0">
-          {data.description}
-        </p>
+
+        <p className="text-[0.938rem] opacity-50 lg:mb-4">{data.description}</p>
 
         <SeeProductButton url={data.url} />
       </div>
