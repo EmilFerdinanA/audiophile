@@ -49,15 +49,24 @@ body {
 
 /* ZX9 */
 .background-zx9 {
-  @apply bg-[url(/assets/home/desktop/pattern-circles.svg)] bg-cover md:bg-auto bg-no-repeat bg-position-[center_bottom_8rem] md:bg-position-[center_bottom_3rem] lg:bg-position-[top_-2.5rem_left_-8rem];
+  @apply bg-[url(/assets/home/desktop/pattern-circles.svg)]
+         bg-[var(--primary)]
+         bg-cover
+         md:bg-auto
+         bg-no-repeat;
+  background-position: center bottom 8rem;
 }
 
-.h-zx9 {
-  @apply h-[600px] md:h-[720px] lg:h-[560px];
+@media (min-width: 768px) {
+  .background-zx9 {
+    background-position: center bottom 3rem;
+  }
 }
 
-.container-zx9 {
-  @apply flex justify-center items-center flex-col lg:flex-row lg:items-end;
+@media (min-width: 1024px) {
+  .background-zx9 {
+    background-position: top -2.5rem left -8rem;
+  }
 }
 
 /* ZX7 */
