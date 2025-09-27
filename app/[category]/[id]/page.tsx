@@ -4,6 +4,7 @@ import { Category } from "@/components/Category";
 import { DetailImage } from "@/components/DetailImage";
 import { DetailProduct } from "@/components/DetailProduct";
 import { Features } from "@/components/Features";
+import { dataDetailProduct } from "@/public/data/detailProduct";
 
 interface IProps {
   params: Promise<{ id: string }>;
@@ -11,21 +12,20 @@ interface IProps {
 
 export default async function page({ params }: IProps) {
   const { id } = await params;
-  console.log(id);
-  return (
-    <main className="containers">
-      <div className="flex-1 flex gap-32 lg:gap-40 flex-col max-width base-p pb-32 lg:pb-40 pt-4 md:pt-8 lg:pt-20">
-        <button className="text-[15px] opacity-50 self-start lg:-mb-28">
-          Go Back
-        </button>
+  const data = dataDetailProduct.find((e) => e.id === id)!;
 
-        <DetailProduct />
-        <Features />
-        <DetailImage />
-        <AlsoLike />
-        <Category />
-        <Bringing />
-      </div>
+  return (
+    <main className="grid max-width base-p mx-auto gap-32 lg:gap-40 pb-32 lg:pb-40 pt-4 md:pt-8 lg:pt-20">
+      <button className="text-[15px] opacity-50 lg:-mb-28 place-self-start">
+        Go Back
+      </button>
+
+      <DetailProduct data={data} />
+      <Features />
+      <DetailImage />
+      <AlsoLike />
+      <Category />
+      <Bringing />
     </main>
   );
 }

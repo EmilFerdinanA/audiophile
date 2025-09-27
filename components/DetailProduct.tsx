@@ -1,45 +1,53 @@
-export const DetailProduct = () => {
+import { IDetailProduct } from "@/public/data/detailProduct";
+
+interface IProps {
+  data: IDetailProduct;
+}
+
+export const DetailProduct = ({ data }: IProps) => {
+  const { image, title, description, price, new_product } = data.data;
+
   return (
-    <section className="flex flex-col items-center md:flex-row gap-8 md:gap-16 lg:gap-32">
-      <picture className="h-full w-full md:w-5/12 lg:w-1/2">
-        <source
-          media="(min-width:1024px)"
-          srcSet={"/assets/product-yx1-earphones/desktop/image-product.jpg"}
-        />
-        <source
-          media="(min-width:768px)"
-          srcSet={"/assets/product-yx1-earphones/tablet/image-product.jpg"}
-        />
+    <section className="grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-2 gap-8 md:gap-16 lg:gap-0">
+      <picture>
+        <source media="(min-width:1024px)" srcSet={image.desktop} />
+        <source media="(min-width:768px)" srcSet={image.tablet} />
         <img
-          src={"/assets/product-yx1-earphones/mobile/image-product.jpg"}
-          alt="XX99 Mark II"
-          className="rounded-lg object-cover object-center"
+          src={image.mobile}
+          alt={title}
+          className="rounded-lg object-cover object-center h-full w-full"
         />
       </picture>
 
-      <div className="flex flex-col gap-6 md:gap-8 md:w-1/2">
-        <h2 className="text-primary tracking-[10px] md:tracking-[8px] lg:tracking-[10px] text-sm md:text-[12px] lg:text-sm md:-mb-4">
-          NEW PRODUCT
-        </h2>
+      <div className="grid md:place-content-center gap-6 md:gap-8 md:py-11 lg:pt-28 lg:pb-20 lg:pl-32">
+        {new_product && (
+          <h2 className="text-primary tracking-[10px] md:tracking-[8px] lg:tracking-[10px] text-sm md:text-[12px] lg:text-sm md:-mb-4">
+            NEW PRODUCT
+          </h2>
+        )}
+
         <h1 className="font-bold tracking-[1px] text-[1.75rem] lg:text-[2.5rem] md:leading-[32px] lg:leading-[44px]">
-          YX1 WIRELESS EARPHONES
+          {title.split(" ").map((char, i) => (
+            <span key={i} className="last:block">
+              {char}{" "}
+            </span>
+          ))}
         </h1>
+
         <p className="text-[0.938rem] leading-[25px] opacity-50">
-          Tailor your listening experience with bespoke dynamic drivers from the
-          new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
-          in noisy environments with its active noise cancellation feature.
+          {description}
         </p>
 
-        <p className="font-bold text-[1.125rem] lg:mb-4">$ 599</p>
+        <p className="font-bold text-[1.125rem] lg:mb-4">$ {price}</p>
 
-        <div className="flex gap-4 h-12 mt-2">
-          <div className="containers bg-[#F1F1F1] w-[7.5rem]">
+        <div className="flex flex-wrap gap-4 mt-2">
+          <div className="containers bg-[#F1F1F1] w-[7.5rem] h-12">
             <button className="w-full h-full cursor-pointer">-</button>
             <div className="w-full text-center">1</div>
             <button className="w-full h-full cursor-pointer">+</button>
           </div>
 
-          <button className="bg-primary w-40 font-bold text-sm tracking-[1px] text-white containers">
+          <button className="bg-primary px-8 font-bold text-sm tracking-[1px] text-white h-12">
             ADD TO CART
           </button>
         </div>

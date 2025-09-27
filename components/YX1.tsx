@@ -21,7 +21,7 @@ export default function YX1() {
 
       <div className="col-span-2 md:col-span-1 bg-[#F1F1F1] rounded-lg grid place-content-center justify-start h-52 md:h-80 p-6 md:p-10 lg:p-24">
         <h1 className="font-bold text-3xl mb-8">YX1 EARPHONES</h1>
-        <SeeProductButton variant="secondary" />
+        <SeeProductButton variant="secondary" url="/earphones/yx1" />
       </div>
     </section>
   );
