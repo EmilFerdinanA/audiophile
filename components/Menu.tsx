@@ -12,16 +12,19 @@ export const Menu = () => {
       if (menuRef.current) menuRef.current.scrollTop = 0;
     };
 
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    const updateBodyOverflow = () => {
+      const isMobile = window.innerWidth < 1024;
+      document.body.style.overflow = isOpen && isMobile ? "hidden" : "";
+    };
 
     resetScroll();
+    updateBodyOverflow();
+
+    window.addEventListener("resize", updateBodyOverflow);
 
     return () => {
       document.body.style.overflow = "";
+      window.removeEventListener("resize", updateBodyOverflow);
     };
   }, [isOpen]);
 
