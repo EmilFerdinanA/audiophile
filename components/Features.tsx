@@ -1,17 +1,17 @@
-import { DataDetailProduct } from "@/public/data/detailProduct";
+import { IFeatures } from "@/public/data/detailProduct";
 
 interface IProps {
-  data: DataDetailProduct;
+  data: IFeatures;
 }
 
 export const Features = ({ data }: IProps) => {
-  const { features, in_the_box } = data;
+  const { description, box } = data;
   return (
     <section className="grid grid-cols-5 gap-y-28 md:gap-y-32 lg:gap-32">
       <div className="col-span-5 lg:col-span-3 grid gap-6 md:gap-8">
         <h1 className="text-[2rem] font-bold tracking-[1.14px]">FEATURES</h1>
         <div className="grid gap-6 md:gap-8 opacity-50">
-          {features.split("\n").map((e, i) => (
+          {description.split("\n").map((e, i) => (
             <p key={i}>{e}</p>
           ))}
         </div>
@@ -23,7 +23,7 @@ export const Features = ({ data }: IProps) => {
         </h1>
 
         <ul className="col-span-2 md:col-span-1 lg:col-span-2 grid gap-2">
-          {in_the_box.map((e) => (
+          {box.map((e) => (
             <li key={e.id} className="flex gap-2 items-center">
               <span className="text-primary font-bold mr-6">{e.stock}x</span>
               <span className="opacity-50">{e.unit}</span>
