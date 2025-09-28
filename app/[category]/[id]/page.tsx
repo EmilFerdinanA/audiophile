@@ -12,7 +12,7 @@ interface IProps {
 
 export default async function page({ params }: IProps) {
   const { id } = await params;
-  const { data, features, detail_image } = dataDetailProduct.find(
+  const { data, features, detail_image, also_like } = dataDetailProduct.find(
     (e) => e.id === id
   )!;
 
@@ -25,7 +25,7 @@ export default async function page({ params }: IProps) {
       <DetailProduct data={data} />
       <Features data={features} />
       <DetailImage data={detail_image} />
-      <AlsoLike />
+      <AlsoLike data={also_like} />
       <Category />
       <Bringing />
     </main>

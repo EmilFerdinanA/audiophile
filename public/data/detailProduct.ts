@@ -63,6 +63,35 @@ export const dataDetailProduct = [
         desktop: "/assets/product-yx1-earphones/desktop/image-gallery-3.jpg",
       },
     },
+    also_like: [
+      {
+        title: "XX99 MARK I",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+        },
+        url: "",
+      },
+      {
+        title: "XX59",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
+        },
+        url: "",
+      },
+      {
+        title: "ZX9 SPEAKER",
+        image: {
+          mobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
+          tablet: "/assets/shared/tablet/image-zx9-speaker.jpg",
+          desktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
+        },
+        url: "",
+      },
+    ],
   },
 ];
 
@@ -71,6 +100,7 @@ export interface IDetailProduct {
   data: DataDetailProduct;
   features: IFeatures;
   detail_image: IDetailImage;
+  also_like: IAlsoLike;
 }
 
 export interface DataDetailProduct {
@@ -110,4 +140,10 @@ export interface IDetailImage {
   image1: Image;
   image2: Image;
   image3: Image;
+}
+
+export interface IAlsoLike {
+  title: string;
+  image: Image;
+  url: string;
 }
