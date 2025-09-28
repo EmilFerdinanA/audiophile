@@ -45,6 +45,24 @@ export const dataDetailProduct = [
         },
       ],
     },
+    detail_image: {
+      alt: "yx1",
+      image1: {
+        mobile: "/assets/product-yx1-earphones/mobile/image-gallery-1.jpg",
+        tablet: "/assets/product-yx1-earphones/tablet/image-gallery-1.jpg",
+        desktop: "/assets/product-yx1-earphones/desktop/image-gallery-1.jpg",
+      },
+      image2: {
+        mobile: "/assets/product-yx1-earphones/mobile/image-gallery-2.jpg",
+        tablet: "/assets/product-yx1-earphones/tablet/image-gallery-2.jpg",
+        desktop: "/assets/product-yx1-earphones/desktop/image-gallery-2.jpg",
+      },
+      image3: {
+        mobile: "/assets/product-yx1-earphones/mobile/image-gallery-3.jpg",
+        tablet: "/assets/product-yx1-earphones/tablet/image-gallery-3.jpg",
+        desktop: "/assets/product-yx1-earphones/desktop/image-gallery-3.jpg",
+      },
+    },
   },
 ];
 
@@ -52,6 +70,7 @@ export interface IDetailProduct {
   id: string;
   data: DataDetailProduct;
   features: IFeatures;
+  detail_image: IDetailImage;
 }
 
 export interface DataDetailProduct {
@@ -84,4 +103,11 @@ interface Image {
   mobile: string;
   tablet: string;
   desktop: string;
+}
+
+export interface IDetailImage {
+  alt: string;
+  image1: Image;
+  image2: Image;
+  image3: Image;
 }
