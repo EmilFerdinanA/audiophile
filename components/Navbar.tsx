@@ -1,3 +1,4 @@
+import { useCart } from "@/Context/CartProvider";
 import { useMenu } from "@/Context/MenuContext";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,7 @@ const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 
 export const Navbar = () => {
   const { toggleMenu } = useMenu();
+  const { toggleCart } = useCart();
 
   return (
     <nav className="sticky flex bg-[#191919] h-24 top-0 z-50">
@@ -46,13 +48,18 @@ export const Navbar = () => {
             ))}
           </ul>
 
-          <Image
-            src={"/assets/icon-cart.svg"}
-            alt={"logo"}
-            width={23}
-            height={20}
-            priority
-          />
+          <div className="relative cursor-pointer" onClick={toggleCart}>
+            <Image
+              src="/assets/icon-cart.svg"
+              alt="cart icon"
+              width={23}
+              height={20}
+              priority
+            />
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 containers">
+              3
+            </span>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,13 +1,14 @@
 "use client";
-import { MenuProvider } from "@/Context/MenuContext";
+import { Cart } from "./Cart";
 import { Menu } from "./Menu";
 import { Navbar } from "./Navbar";
 
 export const Header = () => {
   return (
-    <MenuProvider>
+    <>
       <Navbar />
       <Menu />
-    </MenuProvider>
+      <Cart />
+    </>
   );
 };
