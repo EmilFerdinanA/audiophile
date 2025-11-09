@@ -20,7 +20,7 @@ export const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </span>
-          <SeeProductButton />
+          <SeeProductButton url="/headphones/xx99II" />
         </div>
       </div>
     </div>

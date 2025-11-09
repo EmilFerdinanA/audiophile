@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* eslint-disable @next/next/no-img-element */
 const MENUS = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
 
@@ -11,11 +13,19 @@ export const Footer = () => {
           <img src="/assets/logo.svg" alt="logo" />
 
           <ul className="containers flex-col md:flex-row font-bold gap-4 md:gap-9">
-            {MENUS.map((menu, index) => (
-              <li key={index} className="hover:text-[#D87D4A] cursor-pointer">
-                {menu}
-              </li>
-            ))}
+            {MENUS.map((menu, index) => {
+              const href = menu === "HOME" ? "/" : `/${menu.toLowerCase()}`;
+              return (
+                <li key={index}>
+                  <Link
+                    href={href}
+                    className="hover:text-[#D87D4A] cursor-pointer"
+                  >
+                    {menu}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
 

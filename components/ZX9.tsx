@@ -21,7 +21,7 @@ export default function ZX9() {
           truly remarkable sound.
         </p>
 
-        <SeeProductButton variant="tertiary" />
+        <SeeProductButton variant="tertiary" url="/speakers/zx9" />
       </div>
     </div>
   );
