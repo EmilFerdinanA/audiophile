@@ -4,13 +4,14 @@ import Image from "next/image";
 import clsx from "clsx";
 
 export const Cart = () => {
-  const { isOpen } = useCart();
+  const { isOpen, toggleCart } = useCart();
   return (
     <div
       className={clsx(
         "fixed inset-0 bg-black/60 top-24 z-50",
         !isOpen && "hidden"
       )}
+      onClick={toggleCart}
     >
       <div className="max-width mx-auto base-p flex justify-end pt-6 lg:pt-8">
         <div className="px-7 py-8 bg-white w-full md:w-[23.563rem] rounded-lg grid gap-8">

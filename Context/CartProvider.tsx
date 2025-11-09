@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 interface CartContextType {
   isOpen: boolean;
@@ -10,6 +11,11 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleCart = () => setIsOpen((prev) => !prev);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <CartContext.Provider value={{ isOpen, toggleCart }}>
