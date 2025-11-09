@@ -1,5 +1,6 @@
 "use client";
-import { Cart } from "./Cart";
+
+import { Cart } from "./Cart/Cart";
 import { Menu } from "./Menu";
 import { Navbar } from "./Navbar";
 
