@@ -105,6 +105,106 @@ export const dataDetailProduct = [
     ],
   },
   {
+    id: "xx99I",
+    data: {
+      title: "XX99 MARK I HEADPHONES",
+      description:
+        "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
+      price: 1750,
+      image: {
+        mobile:
+          "/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+        tablet:
+          "/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+        desktop:
+          "/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg",
+      },
+      new_product: false,
+    },
+    features: {
+      description:
+        "As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz. \nFrom the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector.",
+      box: [
+        {
+          id: 1,
+          stock: 1,
+          unit: "Headphone Unit",
+        },
+        {
+          id: 2,
+          stock: 2,
+          unit: "Replacement Earcups",
+        },
+        {
+          id: 3,
+          stock: 1,
+          unit: "User Manual",
+        },
+        {
+          id: 4,
+          stock: 1,
+          unit: "3.5mm 5m Audio Cable",
+        },
+      ],
+    },
+    detail_image: {
+      alt: "yx1",
+      image1: {
+        mobile:
+          "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
+        tablet:
+          "/assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
+        desktop:
+          "/assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg",
+      },
+      image2: {
+        mobile:
+          "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
+        tablet:
+          "/assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
+        desktop:
+          "/assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg",
+      },
+      image3: {
+        mobile:
+          "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
+        tablet:
+          "/assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
+        desktop:
+          "/assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg",
+      },
+    },
+    also_like: [
+      {
+        title: "XX99 MARK II",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
+        },
+        url: "/headphones/xx99II",
+      },
+      {
+        title: "XX59",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
+        },
+        url: "/headphones/xx59",
+      },
+      {
+        title: "ZX9 SPEAKER",
+        image: {
+          mobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
+          tablet: "/assets/shared/tablet/image-zx9-speaker.jpg",
+          desktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
+        },
+        url: "/speakers/zx9",
+      },
+    ],
+  },
+  {
     id: "yx1",
     data: {
       title: "YX1 WIRELESS EARPHONES",
