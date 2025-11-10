@@ -14,7 +14,7 @@ export const dataDetailProduct = [
         desktop:
           "/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg",
       },
-      new_product: false,
+      new_product: true,
     },
     features: {
       description:
@@ -48,7 +48,7 @@ export const dataDetailProduct = [
       ],
     },
     detail_image: {
-      alt: "yx1",
+      alt: "xx99II",
       image1: {
         mobile:
           "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
@@ -148,7 +148,7 @@ export const dataDetailProduct = [
       ],
     },
     detail_image: {
-      alt: "yx1",
+      alt: "xx99I",
       image1: {
         mobile:
           "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
@@ -204,6 +204,95 @@ export const dataDetailProduct = [
       },
     ],
   },
+  {
+    id: "xx59",
+    data: {
+      title: "XX59 HEADPHONES",
+      description:
+        "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
+      price: 899,
+      image: {
+        mobile: "/assets/product-xx59-headphones/mobile/image-product.jpg",
+        tablet: "/assets/product-xx59-headphones/tablet/image-product.jpg",
+        desktop: "/assets/product-xx59-headphones/desktop/image-product.jpg",
+      },
+      new_product: false,
+    },
+    features: {
+      description:
+        "These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos. \nMore than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.",
+      box: [
+        {
+          id: 1,
+          stock: 1,
+          unit: "Headphone Unit",
+        },
+        {
+          id: 2,
+          stock: 2,
+          unit: "Replacement Earcups",
+        },
+        {
+          id: 3,
+          stock: 1,
+          unit: "User Manual",
+        },
+        {
+          id: 4,
+          stock: 1,
+          unit: "3.5mm 5m Audio Cable",
+        },
+      ],
+    },
+    detail_image: {
+      alt: "xx59",
+      image1: {
+        mobile: "/assets/product-xx59-headphones/mobile/image-gallery-1.jpg",
+        tablet: "/assets/product-xx59-headphones/tablet/image-gallery-1.jpg",
+        desktop: "/assets/product-xx59-headphones/desktop/image-gallery-1.jpg",
+      },
+      image2: {
+        mobile: "/assets/product-xx59-headphones/mobile/image-gallery-2.jpg",
+        tablet: "/assets/product-xx59-headphones/tablet/image-gallery-2.jpg",
+        desktop: "/assets/product-xx59-headphones/desktop/image-gallery-2.jpg",
+      },
+      image3: {
+        mobile: "/assets/product-xx59-headphones/mobile/image-gallery-3.jpg",
+        tablet: "/assets/product-xx59-headphones/tablet/image-gallery-3.jpg",
+        desktop: "/assets/product-xx59-headphones/desktop/image-gallery-3.jpg",
+      },
+    },
+    also_like: [
+      {
+        title: "XX99 MARK II",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
+        },
+        url: "/headphones/xx99II",
+      },
+      {
+        title: "XX99 MARK I",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+        },
+        url: "/headphones/xx99I",
+      },
+      {
+        title: "ZX9 SPEAKER",
+        image: {
+          mobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
+          tablet: "/assets/shared/tablet/image-zx9-speaker.jpg",
+          desktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
+        },
+        url: "/speakers/zx9",
+      },
+    ],
+  },
+
   {
     id: "yx1",
     data: {
