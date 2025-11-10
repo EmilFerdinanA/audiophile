@@ -9,9 +9,10 @@ interface Image {
 interface IProps {
   title: string;
   image: Image;
+  url?: string;
 }
 
-export const AlsoLikeCard = ({ title, image }: IProps) => {
+export const AlsoLikeCard = ({ title, image, url }: IProps) => {
   return (
     <div className="containers !flex-col gap-8 w-full">
       <picture className="w-full md:mb-2">
@@ -26,7 +27,7 @@ export const AlsoLikeCard = ({ title, image }: IProps) => {
 
       <h2 className="text-2xl tracking-[1.71px] font-bold">{title}</h2>
 
-      <SeeProductButton />
+      <SeeProductButton url={url} />
     </div>
   );
 };

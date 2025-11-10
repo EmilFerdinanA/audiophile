@@ -1,8 +1,112 @@
 export const dataDetailProduct = [
   {
+    id: "xx99II",
+    data: {
+      title: "XX99 MARK II HEADPHONES",
+      description:
+        "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+      price: 2999,
+      image: {
+        mobile:
+          "/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
+        tablet:
+          "/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
+        desktop:
+          "/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg",
+      },
+      new_product: false,
+    },
+    features: {
+      description:
+        "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat. \nThe advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.",
+      box: [
+        {
+          id: 1,
+          stock: 1,
+          unit: "Headphone Unit",
+        },
+        {
+          id: 2,
+          stock: 2,
+          unit: "Replacement Earcups",
+        },
+        {
+          id: 3,
+          stock: 1,
+          unit: "User Manual",
+        },
+        {
+          id: 4,
+          stock: 1,
+          unit: "3.5mm 5m Audio Cable",
+        },
+        {
+          id: 5,
+          stock: 1,
+          unit: "Travel Bag",
+        },
+      ],
+    },
+    detail_image: {
+      alt: "yx1",
+      image1: {
+        mobile:
+          "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
+        tablet:
+          "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
+        desktop:
+          "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg",
+      },
+      image2: {
+        mobile:
+          "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
+        tablet:
+          "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
+        desktop:
+          "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg",
+      },
+      image3: {
+        mobile:
+          "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
+        tablet:
+          "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
+        desktop:
+          "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
+      },
+    },
+    also_like: [
+      {
+        title: "XX99 MARK I",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+        },
+        url: "/headphones/xx99I",
+      },
+      {
+        title: "XX59",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
+        },
+        url: "/headphones/xx59",
+      },
+      {
+        title: "ZX9 SPEAKER",
+        image: {
+          mobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
+          tablet: "/assets/shared/tablet/image-zx9-speaker.jpg",
+          desktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
+        },
+        url: "/speakers/zx9",
+      },
+    ],
+  },
+  {
     id: "yx1",
     data: {
-      id: 1,
       title: "YX1 WIRELESS EARPHONES",
       description:
         "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
@@ -104,7 +208,6 @@ export interface IDetailProduct {
 }
 
 export interface DataDetailProduct {
-  id: number;
   title: string;
   description: string;
   price: number;
