@@ -388,6 +388,100 @@ export const dataDetailProduct = [
     ],
   },
   {
+    id: "zx7",
+    data: {
+      title: "ZX7 SPEAKERS",
+      description:
+        "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+      price: 3500,
+      image: {
+        mobile: "/assets/product-zx7-speaker/mobile/image-product.jpg",
+        tablet: "/assets/product-zx7-speaker/tablet/image-product.jpg",
+        desktop: "/assets/product-zx7-speaker/desktop/image-product.jpg",
+      },
+      new_product: false,
+    },
+    features: {
+      description:
+        "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m). \nDiscover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.",
+      box: [
+        {
+          id: 1,
+          stock: 2,
+          unit: "Speaker Unit",
+        },
+        {
+          id: 2,
+          stock: 2,
+          unit: "Speaker Cloth Panel",
+        },
+        {
+          id: 3,
+          stock: 1,
+          unit: "User Manual",
+        },
+        {
+          id: 4,
+          stock: 1,
+          unit: "3.5mm 7.5m Audio Cable",
+        },
+        {
+          id: 5,
+          stock: 1,
+          unit: "7.5m Optical Cable",
+        },
+      ],
+    },
+    detail_image: {
+      alt: "zx7",
+      image1: {
+        mobile: "/assets/product-zx7-speaker/mobile/image-gallery-1.jpg",
+        tablet: "/assets/product-zx7-speaker/tablet/image-gallery-1.jpg",
+        desktop: "/assets/product-zx7-speaker/desktop/image-gallery-1.jpg",
+      },
+      image2: {
+        mobile: "/assets/product-zx7-speaker/mobile/image-gallery-2.jpg",
+        tablet: "/assets/product-zx7-speaker/tablet/image-gallery-2.jpg",
+        desktop: "/assets/product-zx7-speaker/desktop/image-gallery-2.jpg",
+      },
+      image3: {
+        mobile: "/assets/product-zx7-speaker/mobile/image-gallery-3.jpg",
+        tablet: "/assets/product-zx7-speaker/tablet/image-gallery-3.jpg",
+        desktop: "/assets/product-zx7-speaker/desktop/image-gallery-3.jpg",
+      },
+    },
+    also_like: [
+      {
+        title: "ZX9 SPEAKER",
+        image: {
+          mobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
+          tablet: "/assets/shared/tablet/image-zx9-speaker.jpg",
+          desktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
+        },
+        url: "/speakers/zx9",
+      },
+      {
+        title: "XX99 MARK I",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+        },
+        url: "/headphones/xx99I",
+      },
+      {
+        title: "XX59",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
+        },
+        url: "",
+      },
+    ],
+  },
+  // earphones
+  {
     id: "yx1",
     data: {
       title: "YX1 WIRELESS EARPHONES",
