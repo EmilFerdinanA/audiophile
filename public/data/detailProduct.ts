@@ -1,4 +1,5 @@
 export const dataDetailProduct = [
+  // headphones
   {
     id: "xx99II",
     data: {
@@ -292,7 +293,100 @@ export const dataDetailProduct = [
       },
     ],
   },
-
+  // speakers
+  {
+    id: "zx9",
+    data: {
+      title: "ZX9 SPEAKERS",
+      description:
+        "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+      price: 4500,
+      image: {
+        mobile: "/assets/product-zx9-speaker/mobile/image-product.jpg",
+        tablet: "/assets/product-zx9-speaker/tablet/image-product.jpg",
+        desktop: "/assets/product-zx9-speaker/desktop/image-product.jpg",
+      },
+      new_product: true,
+    },
+    features: {
+      description:
+        "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m). \nDiscover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.",
+      box: [
+        {
+          id: 1,
+          stock: 2,
+          unit: "Speaker Unit",
+        },
+        {
+          id: 2,
+          stock: 2,
+          unit: "Speaker Cloth Panel",
+        },
+        {
+          id: 3,
+          stock: 1,
+          unit: "User Manual",
+        },
+        {
+          id: 4,
+          stock: 1,
+          unit: "3.5mm 5m Audio Cable",
+        },
+        {
+          id: 5,
+          stock: 1,
+          unit: "10m Optical Cable",
+        },
+      ],
+    },
+    detail_image: {
+      alt: "zx9",
+      image1: {
+        mobile: "/assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
+        tablet: "/assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
+        desktop: "/assets/product-zx9-speaker/desktop/image-gallery-1.jpg",
+      },
+      image2: {
+        mobile: "/assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
+        tablet: "/assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
+        desktop: "/assets/product-zx9-speaker/desktop/image-gallery-2.jpg",
+      },
+      image3: {
+        mobile: "/assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
+        tablet: "/assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
+        desktop: "/assets/product-zx9-speaker/desktop/image-gallery-3.jpg",
+      },
+    },
+    also_like: [
+      {
+        title: "ZX7 SPEAKER",
+        image: {
+          mobile: "/assets/shared/mobile/image-zx7-speaker.jpg",
+          tablet: "/assets/shared/tablet/image-zx7-speaker.jpg",
+          desktop: "/assets/shared/desktop/image-zx7-speaker.jpg",
+        },
+        url: "/speakers/zx7",
+      },
+      {
+        title: "XX99 MARK I",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+        },
+        url: "/headphones/xx99I",
+      },
+      {
+        title: "XX59",
+        image: {
+          mobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
+          tablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
+          desktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
+        },
+        url: "",
+      },
+    ],
+  },
   {
     id: "yx1",
     data: {
