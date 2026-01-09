@@ -22,9 +22,9 @@ export const Cart = () => {
   const total = cartItems.reduce((sum, i) => sum + i.price, 0);
 
   return (
-    <div className={clsx("fixed inset-0 top-24", !isOpen && "hidden")}>
+    <div className={clsx("fixed inset-0 top-24 z-40", !isOpen && "hidden")}>
       {/* Backdrop */}
-      <div className="fixed inset-0 bg-black/60 z-50" onClick={toggleCart} />
+      <div className="fixed inset-0 bg-black/60" onClick={toggleCart} />
 
       <div className="max-width mx-auto base-p flex justify-end pt-6 lg:pt-8">
         <div className="px-7 py-8 bg-white w-full md:w-[23.563rem] rounded-lg grid gap-8 z-50">

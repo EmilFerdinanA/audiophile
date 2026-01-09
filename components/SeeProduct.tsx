@@ -31,7 +31,7 @@ export const SeeProductButton: React.FC<ButtonProps> = ({
 export const ShopButton = ({ url }: { url: string }) => {
   return (
     <Link
-      href={url.toLowerCase()}
+      href={`/${url.toLowerCase()}`}
       className="font-bold containers hover:text-primary gap-3 cursor-pointer"
     >
       <span className="opacity-50 hover:opacity-100 text-[13px]">SHOP</span>

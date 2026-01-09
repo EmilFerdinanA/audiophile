@@ -17,6 +17,10 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setIsOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
+
   return (
     <CartContext.Provider value={{ isOpen, toggleCart }}>
       {children}
