@@ -6,6 +6,9 @@ import Link from "next/link";
 export const Cart = () => {
   const { isOpen, toggleCart } = useCart();
 
+  const items = localStorage.getItem("items");
+  const parsed = items ? JSON.parse(items) : [];
+
   const cartItems = [
     {
       name: "XX99 MK II",
@@ -19,7 +22,7 @@ export const Cart = () => {
     },
   ];
 
-  const total = cartItems.reduce((sum, i) => sum + i.price, 0);
+  const total = parsed.reduce((sum, i) => sum + i.price * i.count, 0);
 
   return (
     <div className={clsx("fixed inset-0 top-24 z-40", !isOpen && "hidden")}>
@@ -36,7 +39,7 @@ export const Cart = () => {
 
           {/* Items */}
           <div className="flex flex-col gap-6">
-            {cartItems.map((item, i) => (
+            {parsed.map((item, i) => (
               <CartItem key={i} {...item} />
             ))}
           </div>

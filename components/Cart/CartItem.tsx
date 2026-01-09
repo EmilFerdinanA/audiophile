@@ -4,15 +4,17 @@ export const CartItem = ({
   name,
   price,
   image,
+  count,
 }: {
   name: string;
   price: number;
   image: string;
+  count: number;
 }) => (
   <div className="flex items-center justify-between font-bold">
     <div className="flex gap-4">
       <Image
-        src={image}
+        src={image.mobile}
         alt={name}
         width={64}
         height={64}
@@ -27,7 +29,7 @@ export const CartItem = ({
     <div className="flex gap-4 mt-2">
       <div className="containers bg-[#F1F1F1] h-8 w-24 px-3">
         <button className="cursor-pointer">-</button>
-        <div>1</div>
+        <div>{count}</div>
         <button className="cursor-pointer">+</button>
       </div>
     </div>
