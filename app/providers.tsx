@@ -1,6 +1,5 @@
 "use client";
-
-import { CartProvider } from "@/Context/CartProvider";
+import { CartProvider } from "@/Context/CartContext";
 import { MenuProvider } from "@/Context/MenuContext";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {

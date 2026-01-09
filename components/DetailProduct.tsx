@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import { DataDetailProduct } from "@/public/data/detailProduct";
 
 interface IProps {
@@ -6,6 +8,22 @@ interface IProps {
 
 export const DetailProduct = ({ data }: IProps) => {
   const { image, title, description, price, new_product } = data;
+  const [count, setCount] = useState(1);
+
+  const handleAddToCart = () => {
+    const items = localStorage.getItem("items");
+    const parsed = items ? JSON.parse(items) : [];
+
+    const index = parsed.findIndex((item) => item.title === data.title);
+
+    if (index !== -1) {
+      parsed[index].count += count;
+    } else {
+      parsed.push({ ...data, count });
+    }
+
+    localStorage.setItem("items", JSON.stringify(parsed));
+  };
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-2 gap-8 md:gap-16 lg:gap-0">
@@ -42,12 +60,25 @@ export const DetailProduct = ({ data }: IProps) => {
 
         <div className="flex flex-wrap gap-4 mt-2">
           <div className="containers bg-[#F1F1F1] w-[7.5rem] h-12">
-            <button className="w-full h-full cursor-pointer">-</button>
-            <div className="w-full text-center">1</div>
-            <button className="w-full h-full cursor-pointer">+</button>
+            <button
+              onClick={() => setCount((prev) => prev - 1)}
+              className="w-full h-full cursor-pointer"
+            >
+              -
+            </button>
+            <div className="w-full text-center">{count}</div>
+            <button
+              onClick={() => setCount((prev) => prev + 1)}
+              className="w-full h-full cursor-pointer"
+            >
+              +
+            </button>
           </div>
 
-          <button className="bg-primary px-8 font-bold text-sm tracking-[1px] text-white h-12">
+          <button
+            onClick={handleAddToCart}
+            className="bg-primary px-8 font-bold text-sm tracking-[1px] text-white h-12"
+          >
             ADD TO CART
           </button>
         </div>

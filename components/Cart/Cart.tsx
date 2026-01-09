@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useCart } from "@/Context/CartProvider";
+import { useCart } from "@/Context/CartContext";
 import { CartItem } from "./CartItem";
 import Link from "next/link";
 
